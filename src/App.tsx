@@ -1,7 +1,8 @@
 import React from 'react';
 
-const App = () => {
+const a = 'a';
+function App() {
   return <div>Oi mundo</div>;
-};
+}
 
 export default App;

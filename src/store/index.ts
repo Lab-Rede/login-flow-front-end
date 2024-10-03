@@ -1,6 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+// eslint-disable-next-line  import/no-unresolved, import/extensions
 import reducers from './reducers';
 
 const persistConfig = {

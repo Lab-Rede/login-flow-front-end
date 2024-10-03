@@ -22,13 +22,79 @@
   },
   "plugins": ["react", "@typescript-eslint", "jsx-a11y", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
-    "no-unused-vars": "error"
-    // Suas regras personalizadas aqui
+    "no-console": "warn",
+    "operator-linebreak": ["error", "after", { "overrides": { "?": "before", ":": "before" } }],
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "optionalDependencies": false
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "react/require-default-props": "off",
+    "object-curly-newline": "off",
+    "react/no-unstable-nested-components": [
+      "error",
+      {
+        "allowAsProps": true
+      }
+    ],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".tsx", ".jsx"]
+      }
+    ],
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true
+      }
+    ],
+    "func-style": [
+      "error",
+      "expression",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "func-names": ["error", "never"],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "import/no-unresolved": "error",
+    "no-confusing-arrow": [
+      "error",
+      {
+        "allowParens": true
+      }
+    ],
+    "arrow-body-style": ["error", "always"],
+    "quotes": ["error", "single"]
   },
   "settings": {
-    "react": {
-      "version": "detect"
+    "import/resolver": {
+      "typescript": {}
     }
   }
 }

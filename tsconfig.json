@@ -15,10 +15,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+    "jsx": "react-jsx",
     "rootDir": "./src",
-    "jsx": "preserve",
     "experimentalDecorators": true
   },
-
-  "include": ["src"]
+  "include": ["src", "scripts/replaceVersion.js"]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable import/prefer-default-export */
 import { linkResponse } from 'interfaces/services/link';
 import api from 'services';
 
